@@ -6,5 +6,13 @@ namespace LoginEfCoreWf
         {
             InitializeComponent();
         }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            //login: danielpaiva
+            //senha: amo.corrida
+
+            
+        }
     }
 }

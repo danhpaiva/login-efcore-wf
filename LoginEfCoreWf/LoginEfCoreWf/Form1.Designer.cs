@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             btn_login = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            tb_login = new TextBox();
+            tb_senha = new TextBox();
             SuspendLayout();
             // 
             // btn_login
@@ -45,27 +45,28 @@
             btn_login.Size = new Size(281, 60);
             btn_login.TabIndex = 0;
             btn_login.UseVisualStyleBackColor = false;
+            btn_login.Click += btn_login_Click;
             // 
-            // textBox1
+            // tb_login
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Cursor = Cursors.Hand;
-            textBox1.Font = new Font("Segoe UI", 32.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(239, 391);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(466, 58);
-            textBox1.TabIndex = 1;
+            tb_login.BorderStyle = BorderStyle.None;
+            tb_login.Cursor = Cursors.Hand;
+            tb_login.Font = new Font("Segoe UI", 32.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_login.Location = new Point(239, 391);
+            tb_login.Name = "tb_login";
+            tb_login.Size = new Size(466, 58);
+            tb_login.TabIndex = 1;
             // 
-            // textBox2
+            // tb_senha
             // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Cursor = Cursors.Hand;
-            textBox2.Font = new Font("Segoe UI", 32.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(239, 484);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(465, 58);
-            textBox2.TabIndex = 2;
-            textBox2.UseSystemPasswordChar = true;
+            tb_senha.BorderStyle = BorderStyle.None;
+            tb_senha.Cursor = Cursors.Hand;
+            tb_senha.Font = new Font("Segoe UI", 32.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tb_senha.Location = new Point(239, 484);
+            tb_senha.Name = "tb_senha";
+            tb_senha.Size = new Size(465, 58);
+            tb_senha.TabIndex = 2;
+            tb_senha.UseSystemPasswordChar = true;
             // 
             // f_login
             // 
@@ -74,8 +75,8 @@
             BackgroundImage = Properties.Resources._1036677_6719;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(884, 861);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(tb_senha);
+            Controls.Add(tb_login);
             Controls.Add(btn_login);
             MaximizeBox = false;
             Name = "f_login";
@@ -88,7 +89,7 @@
         #endregion
 
         private Button btn_login;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox tb_login;
+        private TextBox tb_senha;
     }
 }
