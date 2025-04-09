@@ -22,8 +22,15 @@ namespace LoginEfCoreWf
             {
                 using var db = new LoginContext();
 
-                db.Add(new Login { Nome = login, Senha = senha });
-                db.SaveChangesAsync();
+                try
+                {
+                    db.Add(new Login { Nome = login, Senha = senha });
+                    db.SaveChangesAsync();
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show($"Aconteceu um erro ao tentar cadastrar a senha e logar:\n{erro.Message}");
+                }
 
                 MessageBox.Show("Tudo deu certo! Dados cadastrados!\nLogado no Sistema!");
             } else
