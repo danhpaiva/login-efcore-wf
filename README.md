@@ -1,4 +1,4 @@
-# Projeto de Login Basico
+# Projeto de Login
 
 Login usando Windows Forms e EfCore
 
