@@ -12,9 +12,6 @@ namespace LoginEfCoreWf
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            //login: danielpaiva
-            //senha: amo.corrida
-
             var login = tb_login.Text.ToString();
             var senha = tb_senha.Text.ToString();
 
